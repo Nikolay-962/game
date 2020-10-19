@@ -83,18 +83,16 @@ img
 .m-main__btn
 {
     position: fixed;
-    top: 50%;
+    top: 60px;
     right: 50px;
 
     display: block;
 
-    width: 80px;
-    height: 40px;
+    width: 120px;
+    height: 90vh;
 
     text-align: center;
 
-    border: 1px solid #fff;
-    border-radius: 20px;
     background-color: #0cc2f0;
 }
 
@@ -137,7 +135,7 @@ img
 
 .questions
 {
-    height: 86.3vh;
+    height: 81.3vh;
 }
 
 .questions__wrap
@@ -147,7 +145,7 @@ img
 
     display: grid;
 
-    height: 86.3vh;
+    height: 81.3vh;
 
     grid-template-columns: repeat(7, 1fr);
 }
