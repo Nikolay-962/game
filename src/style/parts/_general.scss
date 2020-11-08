@@ -31,6 +31,7 @@ img {
 .green {
   background-color: green;
 }
+/*
 .header {  
   &__wrap {
     padding: 40px;
@@ -49,6 +50,7 @@ img {
     }
   }
 }
+*/
 .m-main {
   &__wrap {
     position: relative;
@@ -104,6 +106,7 @@ img {
     position: relative;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     height: 81.3vh;
     z-index: 5;
    //animation: rotate-colors 26s linear infinite;

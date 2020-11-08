@@ -51,25 +51,26 @@ img
     background-color: green;
 }
 
-.header__wrap
-{
+/*
+.header {  
+  &__wrap {
     padding: 40px;
-
     text-align: center;
-}
-
-.header__title
-{
-    font-family: 'Pacifico', cursive;
+  }
+  &__title {
+    color: rgb(202, 13, 240);
     font-size: 90px;
-
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 0.6em;
+    text-shadow: 3px 3px 6px rgb(48, 47, 47);
     padding-bottom: 30px;
-
-    letter-spacing: .6em;
-
-    color: #ca0df0;
-    text-shadow: 3px 3px 6px #302f2f;
+    @include media-down(md) { 
+      letter-spacing: 0.4em;
+      font-size: 70px;
+    }
+  }
 }
+*/
 
 .m-main__wrap
 {
@@ -148,6 +149,7 @@ img
     height: 81.3vh;
 
     grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
 }
 
 .questions__bg
@@ -360,13 +362,6 @@ img
 
 @media (max-width: 1239px)
 {
-    .header__title
-    {
-        font-size: 70px;
-
-        letter-spacing: .4em;
-    }
-
     .topics__list
     {
         padding: 0;
