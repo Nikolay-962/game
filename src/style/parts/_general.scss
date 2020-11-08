@@ -25,7 +25,7 @@ img {
   background-color: rgb(12, 194, 240); 
 }
 .container {
-  max-width: 80%;
+  max-width: 76%;
   margin: 0 auto;
 }
 .green {
@@ -52,15 +52,14 @@ img {
 }
 */
 .m-main {
-  &__wrap {
-    position: relative;
+  &__wrap {   
     background-color: rgb(12, 194, 240);
     height: 100vh;    
   }
   &__btn {
     position: fixed;
     right: 50px;
-    top: 60px;  
+    top: 20%;  
     display: block;
     width: 120px;
     height: 90vh;
@@ -68,7 +67,7 @@ img {
     text-align: center;
   }
 }
-.topics {
+.top {
   margin-top: 60px;
   &__list {
     display: grid;
@@ -79,7 +78,7 @@ img {
     }
   }
   &__item {
-    padding: 20px 0;
+    padding: 17px 0;
     text-align: center;
     color: rgb(245, 240, 244);
     font-weight: bold;
@@ -100,25 +99,33 @@ img {
     }
   }
 }
-.questions {
-  height: 81.3vh;
+.questions {  
   &__wrap { 
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    height: 81.3vh;
-    z-index: 5;
-   //animation: rotate-colors 26s linear infinite;
   }
   &__bg {
+   padding-top: 50%;
+   grid-column: 1/8;
+  }
+  &__img {
     position: absolute;
     top: 0;
     right: 0;
-    left: 0;
     bottom: 0;
-    z-index: -1;
+    left: 0;
   }
+  &__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  } 
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
   &__item {
     text-align: center;
     border: 1px solid #fff;
@@ -160,6 +167,9 @@ img {
       font-size: 40px;
     }
   }
+}
+.transparent {
+  opacity: 0;
 }
 @keyframes rotate-colors {
   100% {
@@ -203,8 +213,7 @@ img {
     width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr;  
   }
   &__item {
     position: relative;
@@ -218,8 +227,7 @@ img {
     text-shadow: 3px 3px 6px rgb(48, 47, 47);
     background-color: rgb(40, 70, 238);
     box-shadow: 8px 8px 18px #000;
-    text-align: left;
-   
+    text-align: left;  
     &:active {
       box-shadow: 1px 1px 4px 0 #000;
     }

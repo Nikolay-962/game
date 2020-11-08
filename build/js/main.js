@@ -17,7 +17,7 @@ for (let questionBox of questionBoxs) {
 for (let pic of pics) {
   pic.onclick = function () {
     if (pic) {
-      this.style.backgroundColor = 'transparent';
+      this.classList.add('transparent');
       this.style.border = 'none';
       this.textContent = '';
     } else {
