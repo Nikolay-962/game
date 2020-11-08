@@ -82,16 +82,19 @@ img
 .m-main__btn
 {
     position: fixed;
-    top: 20%;
+    top: 50%;
     right: 50px;
 
     display: block;
 
-    width: 120px;
-    height: 90vh;
+    width: 100px;
+    height: 90px;
 
+    transform: translateY(-50%);
     text-align: center;
 
+    border: 1px solid rgba(255, 255, 255, .4);
+    border-radius: 16px;
     background-color: #0cc2f0;
 }
 
