@@ -68,6 +68,11 @@ img {
     background-color: rgb(12, 194, 240);  
     text-align: center;
     border: 1px solid rgba(255, 255, 255, .4);
+    @include media-down(md) { 
+      width: 80px;
+      height: 60px; 
+      right: 10px;
+    }
   }
 }
 .top {
@@ -160,14 +165,15 @@ img {
     }
   }
   &__link {
+    display: block;
     width: 100%;
-    padding: 10px;
     display: block;
     color: rgb(107, 92, 92);
     font-size: 50px;
     text-shadow: 2px 2px 3px rgb(245, 243, 243);
     @include media-down(md) { 
-      font-size: 40px;
+      font-weight: bold;
+      font-size: 1.6em;      
     }
   }
 }
@@ -209,6 +215,11 @@ img {
     background-color: #2846ee;
     line-height: 1em;
     box-shadow: 8px 8px 18px #000;
+    @include media-down(md) { 
+      font-size: 1.6em;
+      line-height: 1.3em;
+      padding: 20px 30px;     
+    }
   }
 }
 .ansver {
@@ -230,7 +241,12 @@ img {
     text-shadow: 3px 3px 6px rgb(48, 47, 47);
     background-color: rgb(40, 70, 238);
     box-shadow: 8px 8px 18px #000;
-    text-align: left;  
+    text-align: left;
+    @include media-down(md) { 
+      font-size: 1.6em;
+      line-height: 1.3em; 
+      padding: 20px 20px 30px 70px;    
+    }  
     &:active {
       box-shadow: 1px 1px 4px 0 #000;
     }
