@@ -19,7 +19,6 @@ for (let pic of pics) {
     if (pic) {
       this.classList.add('transparent');
       this.style.border = 'none';
-      this.textContent = '';
     } else {
       pic.style.backgroundColor = '#fff';
     }
