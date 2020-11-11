@@ -230,10 +230,8 @@ img
 {
     font-size: 50px;
 
-    display: block;
-    display: block;
-
     width: 100%;
+    padding: 10% 0;
 
     color: #6b5c5c;
     text-shadow: 2px 2px 3px #f5f3f3;
