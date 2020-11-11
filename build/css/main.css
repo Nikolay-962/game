@@ -114,8 +114,7 @@ img
 
 .top__item
 {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 26px;
 
     padding: 17px 0;
 
@@ -131,7 +130,7 @@ img
 
 .top__item:hover
 {
-    color: #2c09f5;
+    color: #f8071b;
     background-color: #e4e729;
 }
 
@@ -374,6 +373,16 @@ img
     align-items: center;
 }
 
+@media (max-width: 1439px)
+{
+    .top__item
+    {
+        font-size: 20px;
+
+        padding: 10px 0;
+    }
+}
+
 @media (max-width: 1239px)
 {
     .m-main__btn
@@ -391,10 +400,9 @@ img
 
     .top__item
     {
-        font-size: 20px;
-        font-weight: bold;
+        font-size: 16px;
 
-        padding: 16px 0;
+        padding: 10px 0;
     }
 
     .content__link
